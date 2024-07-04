@@ -4,21 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Sely</title>
+    <title>Ly's Media</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo icon"></div>
+    <!-- Ini Header Nav-->
+    <header class="nav-container">
+        <div class="logo-icon"></div>
 
         <nav>
-            <a>Home</a>
-            <a>Our Profile</a>
-            <a>Portofolio</a>
-            <a>Massage Us</a>
+            <a href="home.html">Home</a>
+            <a href="our-profile.html">Our Profile</a>
+            <a href="portofolio.html">Portofolio</a>
+            <a href="message-us.html">Message Us</a>
         </nav>
     </header>
+
+    <hr />
+
+    <main>
+        <!-- Ini Home Content-->
+       <section id="home">
+        <h1>Hi <span id="name">Dear</span>, Welcome to Li's Media website</h1>
+        <p>"Suka baca buku?"</p>
+        <p>"Suka menulis?"</p>
+        <p>Ini adalah website yang cocok untuk kamu.</p>
+        <script src="js/script.js"></script>
+       </section>
+
+       <!--Ini Banner Container-->
+       <hr />
+        <div class="banner-container">
+            <div class="banner-item" style="background-image: url('../fundamental-Sely20/assets/image1.jpg');"></div>
+            <div class="banner-item" style="background-image: url('../fundamental-Sely20/assets/image2.jpg');"></div>
+            <div class="banner-item" style="background-image: url('../fundamental-Sely20/assets/image3.jpg');"></div>
+        </div>
+        <hr />
+        <button type="button" onclick="nextSlide(1);">Next</button>
+
+        <script src="script.js"></script>
+
+        <!-- Ini Our Profile Content-->
+        <section id="our-profile">
+           <header>
+                <h1>Our Profile</h1>
+           </header> 
+
+           <article class="profile-content">
+               <div class="profile-item">
+                <div class="profile-icon profile-1"></div>
+                <p>Penulisan Novel</p>
+                <p>Kami menyediakan kurikulum untuk melatih kamu dalam menulis novel</p>
+               </div>
+
+               <div class="profile-item">
+                <div class="profile-icon profile-2"></div>
+                <p>Penulisan Naskah</p>
+                <p>Kami menyediakan kurikulum untuk melatih kamu dalam menyusun naskah film, drama, atau theater musikal</p>
+               </div>
+
+               <div class="profile-item">
+                <div class="profile-icon profile-3"></div>
+                <p>Penulisan Cerpen, Quotes, dan Puisi</p>
+                <p>Kami menyediakan kurikulum untuk melatih kamu dalam merangkai cerpen (all genre), quotes, dan puisi</p>
+               </div>
+           </article>
+        </section>
+
+        <hr />
+
+        <!-- Ini Portofolio Content dan About Company-->
+         <section id="portofolio">
+            <h1>About Ly's Media and Our Portofolio</h1>
+            <p>Ly's Media adalah wadah atau tempat pelatihan bagi penulis hebat menyalurkan emosi dan perasaannya ke dalam karangan tulisan yang dibungkus menjadi sebuah karya yang menarik. Ruang ini cocok untuk kamu yang mau ikut serta dalam menyalurkan ide dan kreatifitas dalam dunia penulisan.
+            <P>Adapun Visi dari Ly's Media yaitu menciptakan penulis hebat dengan skill yang baik untuk menghasilkan karya, dengan Misi Ly's Media yaitu melatih kamu, calon penluis handal dengan pelatihan khusus yang disiapkan hingga membawa kamu menerbitkan karya versi terbaikmu.</P>
+            <p>Ly's Media sudah berhasil meloloskan karya seorang penulis dengan 2 judul cerpen dalam buku antologi dari 2 penerbit yang berbeda dalam event lomba nasional. Buku antologi 'Merajut Asa' dengan judul cerpen 'Revisi Diri - Jilid I' dari Penerbit Detak Pustaka dan Halo Penulis (2023), serta buku antologi 'Plot Twist Kehidupan - Jilid I' dengan judul cerpen 'Allah Lebih Tahu' dari Penerbit Mahir Nulis (2023)</p>
+            <p>Buat kamu yang tertarik dan ingin bimbing, silahkan kirim pesan singkat dengan tema deskripsi singkat mengenai diri kamu, buat pesan semenarik mungkin, sebagai bentuk menunjukkan bakat kamu! </p>
+            <p>Nantinya, kami akan menghubungi kamu yang terpilih langsung lewat DM akun Instagram yang kamu input. So, let's send a message to us!</p>
+         </section>
+
+        <hr />
+
+        <!-- Ini Message Us Content-->
+        <section id="message-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+            
+            <article style="display: flex; justify-content: space-around;">
+                <form>
+                    <table>
+                        <tr>
+                            <td><label for="firstname">Nama :</label></td>
+                            <td><input type="text" id="firstname" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="istagram">Instagram :</label></td>
+                            <td><input type="text" id="instagram" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="birth-date">Tanggal Lahir :</label></td>
+                            <td><input type="date" id="birth-date" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">Jenis Kelamin :</label></td>
+                            <td>
+                                <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                                <label for="male">Laki-laki</label>
+                                <input type="radio" id="female" name="gender" value="Perempuan" required>
+                                <label for="female">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="messages">Pesan :</label></td>
+                            <td><input type="text" id="messages" required></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                <button type="button" onclick="validateForm();">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+                <div id="result" style="border: 1px solid; height: 200px; width: 300px; padding-left: 10px;">
+                    <p>Nama : <span id="sender-firstname"></span></p>
+                    <p>Instagram : <span id="sender-instagram"></span></p>
+                    <p>Tanggal Lahir : <span id="sender-birthdate"></span></p>
+                    <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+                    <p>Pesan : <span id="sender-messages"></span></p>
+                </div>
+            </article>
+        <!--Ini Contact Company-->
+            <hr />
+            <h2>For more information </h2>
+            <p>Instagram : @Ly's_Media</p>
+            <p>WhatsApp  : 0800 0800 08000 (admin)</p>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+        <!--Ini Footer-->
+    <hr />
+    <footer class="footer">
+        <p>Created by Sely Sabila Permata Hael</p>
+    </footer>
 </body>
 
 </html>

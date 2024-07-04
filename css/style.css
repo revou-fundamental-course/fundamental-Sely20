@@ -1,7 +1,125 @@
 /* Ini CSS */
 
+main {
+    padding: 32px;
+}
+/*Ini Nav Container*/
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Ini Logo Icon*/
 .logo-icon {
     height: 50px;
     width: 50px;
+
+    /* For Image Icon */
+    background-image: url(../assets/Logo.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+nav a {
+    padding-left: 32px;
+    padding-right: 32px;
     border: 1px solid;
+}
+
+/*Ini Banner Content*/
+.banner-container {
+    height: 400px;
+    width: 100%;
+    position: relative; /* Tambahkan properti position */
+    overflow: hidden; /* Tambahkan properti overflow */
+    background-image: url(../assets/image2.jpg);
+    flex-direction: column;
+}
+
+.banner-item {
+    display: none;
+    position: absolute; /* Tambahkan properti position */
+    top: 0; /* Tambahkan properti top */
+    left: 0; /* Tambahkan properti left */
+    flex-direction: column;
+}
+
+/*Ini Profile Content*/
+.profile-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-item {
+    text-align: center;
+    flex: 1;
+    text-align: -webkit-center;
+}
+
+.profile-icon {
+    height: 50px;
+    width: 50px;
+
+     /* For Image Icon */
+     background-size: cover;
+     border-radius: 50%;
+}
+
+.profile-1 {
+    background-image: url(../assets/Profile1.jpg);
+}
+.profile-2 {
+    background-image: url(../assets/Profile2.jpg);
+}
+.profile-3 {
+    background-image: url(../assets/Profile3..jpg);
+}
+
+.divider {
+    flex: 2;
+}
+
+/*Ini Implement Responsive Design*/
+@media only screen and (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+    }
+}
+
+/*Ini Message Us Content*/
+.message-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.tampilan-input {
+    padding-left: 20px;
+    padding-right: 300px;
+    padding-bottom: 20px;
+    border: 1px solid;
+}
+
+.pesan-user {
+    padding-inline-end: 77px;
+}
+
+.nama-user {
+    padding-right: 75px;
+}
+
+.tanggal-lahir {
+    padding-inline-start: 77px;
+}
+
+.tombol-submit {
+    padding-inline: 125px
+}
+
+/*Ini Footer*/
+.footer {
+    text-align: end;
 }
